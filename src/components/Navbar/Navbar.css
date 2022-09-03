@@ -1,0 +1,125 @@
+header {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 100px;
+}
+header .container::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 1px; 
+  background-color: #a2a2a2;
+  left: 15px;
+  bottom: 0;
+}
+header .container .logo img {
+  height: 40px;
+}
+header .container nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .container nav .toggle-menu {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+@media (min-width:768px) {
+  header .container nav .toggle-menu {
+      display: none;
+  }
+}
+header .container nav ul {
+  display: flex;
+}
+@media (max-width:767px) {
+  header .container nav .toggle-menu {
+    display: flex;
+  }
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav ul.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: .3s;
+  }
+  header .container nav ul.show li a {
+      padding: 15px;
+      color: var(--maincolor);
+  }
+}
+header .container nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  padding: 40px 10px;
+  position: relative;
+  z-index: 2;
+}
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+  color: var(--maincolor);
+  border-bottom: 1px solid var(--maincolor);
+}
+header .container nav .form {
+  width: 40px;
+  height: 30px;
+  margin-left: 30px;
+  position: relative;
+  border-left: 1px solid white;
+}
+header .container nav .form .search_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+header .container nav .form .search_icon svg {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+header .container nav .form form { 
+  position: absolute;
+  right: 38px;
+  top: 0;
+  transform: translateY(-10px);
+  z-index: 100;
+}
+header .container nav .form form input {
+  width: 0;
+  padding: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  caret-color: var(--maincolor);
+  color: var(--maincolor);
+  opacity: 0; 
+}
+header .container nav .form form input:focus {
+  border: 1px solid var(--maincolor);
+}
+header .container nav .form form input.show {
+  opacity: 1; 
+  padding: 15px;
+  width: 300px;
+}

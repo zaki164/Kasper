@@ -1,0 +1,97 @@
+.portfolio {
+  padding: var(--section-padding);
+}
+.portfolio .shuffle {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .shuffle li {
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.portfolio .shuffle li.active,
+.portfolio .shuffle li:hover {
+  background-color: var(--maincolor);
+  color: white;
+}
+.portfolio .imgs-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.portfolio .imgs-content .box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .imgs-content .box.hide {
+  animation: myhide .5s ease-in forwards;
+}
+.portfolio .imgs-content .box.show {
+  opacity: 0;
+  animation: myshow .5s ease-in forwards;
+}
+@keyframes myshow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes myhide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio .imgs-content .box {
+      flex-basis: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio .imgs-content .box {
+      flex-basis: 25%;
+  }
+}
+.portfolio .box img {
+  max-width: 100%;
+  transition: 0.3s;
+  height: auto;
+}
+.portfolio .box:hover .caption {
+  bottom: 0;
+}
+.portfolio .box:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+.portfolio .box .caption{
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  background-color: white;
+  bottom: -100%;
+  width: 100%;
+  transition: 0.3s;
+}
+.portfolio .box .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.portfolio .box .caption p {
+  color: var(--maincolor);
+}
+.more {
+  padding: 15px 20px;
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  background-color: var(--maincolor);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}

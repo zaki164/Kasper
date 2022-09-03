@@ -1,0 +1,71 @@
+.subscribe {
+  padding: var(--section-padding);
+  background-image: url(../../assets/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 100%;
+}
+.subscribe .container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .subscribe .container {
+      flex-direction: column;
+  }
+}
+.subscribe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.subscribe form ::placeholder {
+  color: white;
+}
+.subscribe form svg {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.subscribe form input[type="email"] {
+  background: none;
+  padding: 20px 20px 20px 60px;
+  border: 1px solid white;
+  border-right: none; 
+  width: calc(100% - 130px);
+  caret-color: var(--maincolor);
+}
+.subscribe form input[type="submit"] {
+  width: 130px;
+  padding: 10px 20px;
+  background-color: var(--maincolor);
+  border: 1px solid white;
+  border-left: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus {
+  outline: none;
+}
+.subscribe p {
+  line-height: 2;
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .subscribe p {
+      margin: 30px 0 0;
+  }
+}
