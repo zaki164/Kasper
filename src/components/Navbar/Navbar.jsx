@@ -32,7 +32,7 @@ const Navbar = () => {
       }
     })
     document.addEventListener('click', (e) => {
-      if (e.target !== toggleref && e.target !== navref) {
+      if (e.target !== toggleref) {
         if (navref.current.classList.contains('show')) {
           handlesearch(navref);
         }
@@ -49,7 +49,7 @@ const Navbar = () => {
           <div ref={toggleref} onClick={handleshownav}>
             <i className="fas fa-bars toggle-menu"></i>
           </div>
-          <ul ref={navref} onClick={handleshownav}>
+          <ul ref={navref}>
             <li><NavLink exact="true" to="/">Home</NavLink></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skills">Skills</a></li>
