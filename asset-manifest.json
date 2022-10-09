@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kasper/static/css/main.d16e233e.css",
-    "main.js": "/Kasper/static/js/main.2a648e9b.js",
+    "main.js": "/Kasper/static/js/main.8abcc6c4.js",
     "static/media/awesome-video.mp4": "/Kasper/static/media/awesome-video.82171d25d328fd1174a9.mp4",
     "static/media/stats.png": "/Kasper/static/media/stats.a508b84400efad055f18.png",
     "static/media/subscribe.jpg": "/Kasper/static/media/subscribe.1e24fcea5980ced232ec.jpg",
@@ -20,10 +20,10 @@
     "static/media/skills-02.jpg": "/Kasper/static/media/skills-02.ba3dc59103361136769c.jpg",
     "index.html": "/Kasper/index.html",
     "main.d16e233e.css.map": "/Kasper/static/css/main.d16e233e.css.map",
-    "main.2a648e9b.js.map": "/Kasper/static/js/main.2a648e9b.js.map"
+    "main.8abcc6c4.js.map": "/Kasper/static/js/main.8abcc6c4.js.map"
   },
   "entrypoints": [
     "static/css/main.d16e233e.css",
-    "static/js/main.2a648e9b.js"
+    "static/js/main.8abcc6c4.js"
   ]
 }
