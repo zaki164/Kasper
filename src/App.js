@@ -1,16 +1,16 @@
 import { Navbar, Footer, Home } from './components'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <Navbar />
     <Routes>
       <Route exact path='/' element={<Home />} />
     </Routes>
     <Footer />
-  </BrowserRouter>
+  </Router>
 );
 
 export default App;
