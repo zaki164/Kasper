@@ -30,11 +30,9 @@ const Portfolio = () => {
       })
     });
   })
-  // console.log(shuffleref.current.children)
-  // console.log([...shuffleref.current.children]);
 
   return (
-    <section className="portfolio" id='portfolio'>
+    <section className="portfolio">
       <div className="container">
         <div className="main-heading">
           <h2>portfolio</h2>
@@ -106,7 +104,7 @@ const Portfolio = () => {
             </figcaption>
         </figure>
       </div>
-      <a href="/#" className="more">more</a>
+      <a href="#/" className="more">more</a>
     </section>
   )
 }

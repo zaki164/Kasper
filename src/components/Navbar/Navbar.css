@@ -60,8 +60,8 @@ header .container nav ul {
     transition: .3s;
   }
   header .container nav ul.show li a {
-      padding: 15px;
-      color: var(--maincolor);
+    padding: 15px;
+    color: var(--maincolor);
   }
 }
 header .container nav ul li a {
@@ -73,6 +73,7 @@ header .container nav ul li a {
   padding: 40px 10px;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 header .container nav ul li a.active,
 header .container nav ul li a:hover {
@@ -88,6 +89,7 @@ header .container nav .form {
 }
 header .container nav .form .search_icon {
   position: absolute;
+  color: #fff;
   top: 50%;
   transform: translateY(-50%);
   right: 0;

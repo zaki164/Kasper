@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { useRef, useEffect } from 'react';
 import images from '../../constants';
 
@@ -42,21 +42,21 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <NavLink exact="true" to="/" className="logo">
+        <Link to="/" spy={true} smooth={true} offset={-100} duration={500} className="logo">
           <img src={images.logo} alt="logo" />
-        </NavLink>
+        </Link>
         <nav>
           <div ref={toggleref} onClick={handleshownav}>
             <i className="fas fa-bars toggle-menu"></i>
           </div>
           <ul ref={navref}>
-            <li><NavLink exact="true" to="/">Home</NavLink></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><Link to="/" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>
+            <li><Link to="portfolio" spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link></li>
+            <li><Link to="skills" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link></li>
+            <li><Link to="services" spy={true} smooth={true} offset={-100} duration={500}>Services</Link></li>
+            <li><Link to="pricing" spy={true} smooth={true} offset={-100} duration={500}>Pricing</Link></li>
+            <li><Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link></li>
+            <li><Link to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link></li>
           </ul>
           <div className="form">
             <form action="">

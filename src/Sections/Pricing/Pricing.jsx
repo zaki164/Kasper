@@ -22,7 +22,7 @@ const Pricing = () => {
               <li>Feature</li>
             </ul>
             <div className="foot">
-              <a href="/#">Buy Now</a>
+              <a href="#/">Buy Now</a>
             </div>
           </div>
           <div className="plan">
@@ -37,7 +37,7 @@ const Pricing = () => {
               <li>Feature</li>
             </ul>
             <div className="foot">
-              <a href="/#">Buy Now</a>
+              <a href="#/">Buy Now</a>
             </div>
           </div>
           <div className="plan">
@@ -52,7 +52,7 @@ const Pricing = () => {
               <li>Feature</li>
             </ul>
             <div className="foot">
-              <a href="/#">Buy Now</a>
+              <a href="#/">Buy Now</a>
             </div>
           </div>
           <div className="plan">
@@ -67,12 +67,12 @@ const Pricing = () => {
               <li>Feature</li>
             </ul>
             <div className="foot">
-              <a href="/#">Buy Now</a>
+              <a href="#/">Buy Now</a>
             </div>
           </div>
         </div>
         <p className="contact-text">Contact us if you have special request</p>
-        <a href="/#" className="contact-link">Contact Us</a>
+        <a href="#/" className="contact-link">Contact Us</a>
       </div>
     </section>
   )
