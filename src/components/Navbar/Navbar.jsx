@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <Link to="/" spy={true} smooth={true} offset={-100} duration={500} className="logo">
+        <Link to="/" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500} className="logo">
           <img src={images.logo} alt="logo" />
         </Link>
         <nav>
@@ -50,13 +50,13 @@ const Navbar = () => {
             <i className="fas fa-bars toggle-menu"></i>
           </div>
           <ul ref={navref}>
-            <li><Link to="/" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>
-            <li><Link to="portfolio" spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link></li>
-            <li><Link to="skills" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link></li>
-            <li><Link to="services" spy={true} smooth={true} offset={-100} duration={500}>Services</Link></li>
-            <li><Link to="pricing" spy={true} smooth={true} offset={-100} duration={500}>Pricing</Link></li>
-            <li><Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link></li>
-            <li><Link to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link></li>
+            <li><Link to="/" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>
+            <li><Link to="portfolio" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link></li>
+            <li><Link to="skills" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>Skills</Link></li>
+            <li><Link to="services" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>Services</Link></li>
+            <li><Link to="pricing" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>Pricing</Link></li>
+            <li><Link to="contact" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>Contact</Link></li>
+            <li><Link to="about" spy={true} hashSpy={true} smooth={true} offset={-100} duration={500}>About</Link></li>
           </ul>
           <div className="form">
             <form action="">
