@@ -1,9 +1,8 @@
-![Kasper](https://github.com/zaki164/Kasper/assets/92805900/00d3647c-ba0a-4956-946c-1358eebce915)
-
 # Getting Started with Create React App
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![Kasper](https://github.com/zaki164/Kasper/assets/92805900/00d3647c-ba0a-4956-946c-1358eebce915)
 
 ## Available Scripts
 
